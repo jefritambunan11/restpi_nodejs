@@ -7,4 +7,9 @@ const app = express();
 app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
+// panggil router
+let router = require("./router");
+router(app); 
+
+// config http port express
 app.listen(3000);
