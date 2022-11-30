@@ -8,4 +8,5 @@ module.exports = function(app) {
     
     // mahasiswa
     app.route("/mahasiswa").get(controller.getAllMahasiswa);
+    app.route("/mahasiswa/:id").get(controller.getMahasiswa);
 }
