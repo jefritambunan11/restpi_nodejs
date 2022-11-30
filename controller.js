@@ -41,3 +41,25 @@ exports.getMahasiswa = function(req, res) {
         }
     });
 }
+
+
+exports.tambahMahasiswa = function(req, res) {   
+    let nim = req.body.nim;
+    let nama = req.body.nama;
+    let jurusan = req.body.jurusan;
+
+    let _insert_ = `
+        insert into mahasiswa (nim, nama, jurusan)
+        values(?,?,?)
+    `;
+
+    let _values_ = [nim, nama, jurusan];
+
+    connection.query(_insert_, _values_, function(err, row, fileds) {
+        if (err) {
+            connection.log(err);
+        }else{
+            response.ok("Berhasil Menambahkan Data", res);
+        }
+    });
+}
