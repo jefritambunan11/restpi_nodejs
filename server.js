@@ -8,8 +8,8 @@ app.use(bodyParser.urlencoded({extended: true}));
 app.use(bodyParser.json());
 
 // panggil router
-let router = require("./router");
-router(app); 
+let routes = require("./router");
+routes(app); 
 
 // config http port express
 app.listen(3000);

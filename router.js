@@ -4,5 +4,8 @@
 module.exports = function(app) {
     let controller = require("./controller");
 
-    app.route("/").get(controller.index());
+    app.route("/").get(controller.index);
+    
+    // mahasiswa
+    app.route("/mahasiswa").get(controller.getAllMahasiswa);
 }
