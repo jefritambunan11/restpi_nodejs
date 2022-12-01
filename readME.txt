@@ -1,5 +1,5 @@
 # install
-yarn add express mysql body-parser morgan ip jsonwebtoken
+yarn add express mysql body-parser morgan ip jsonwebtoken md5
 
 
 
