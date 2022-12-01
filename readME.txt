@@ -1,5 +1,7 @@
 # install
-yarn add express mysql body-parser
+yarn add express mysql body-parser morgan ip jsonwebtoken
+
+
 
 # buat file 
 touch server.js

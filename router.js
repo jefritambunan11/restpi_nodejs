@@ -11,4 +11,7 @@ module.exports = function(app) {
     app.route("/mahasiswa/:id").get(controller.getMahasiswa);
     app.route("/mahasiswa").post(controller.tambahMahasiswa);
     app.route("/mahasiswa/:id").put(controller.ubahMahasiswa);
+    app.route("/mahasiswa/:id").delete(controller.hapusMahasiswa);
+
+    app.route("/tampilkanmatakuliah").get(controller.tampilkanGroupMataKuliah);
 }
